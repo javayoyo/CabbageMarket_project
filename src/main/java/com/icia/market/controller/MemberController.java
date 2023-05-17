@@ -8,6 +8,6 @@ public class MemberController {
 
     @GetMapping("/member/gogleLogin")
     public String gogleLogin () {
-        return "gogleLogin";
+        return "/memberPages/gogleLogin";
     }
 }
