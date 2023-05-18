@@ -114,4 +114,16 @@ public class MemberController {
         return "memberPages/memberList";
     }
 
+    @GetMapping("/gogleLogin")
+    public String gogleLogin () {
+        return "memberPages/gogleLogin";
+    }
+
+    @GetMapping("/buy")
+    public String buy () {
+        return "memberPages/memberbuy";
+    }
+
+
+
 }

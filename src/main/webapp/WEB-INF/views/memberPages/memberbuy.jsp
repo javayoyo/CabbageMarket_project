@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>Title</title>
+  <title> 🥬 배추마켓 : 거래하기 </title>
 </head>
 <body>
-<h2>실시간으로 거래를 진행해보세요</h2>
+<h2 style="text-align: center;font-size: 30px">실시간으로 거래를 진행해보세요</h2>
 
 <iframe src="https://service.dongledongle.com/market" frameborder="0" width="100%" height="300"></iframe>
 

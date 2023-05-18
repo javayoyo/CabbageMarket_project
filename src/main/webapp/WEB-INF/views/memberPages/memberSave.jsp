@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
+    <title> 🥬 배추마켓 : 회원가입  </title>
     <link rel="stylesheet" href="/resources/css/main.css">
 
 
@@ -17,7 +17,7 @@
 <%@include file="../component/nav.jsp"%>
 
 <div id = "section">
-<h2 style="text-align: center"> 가입을 시작합니다! </h2>
+<h2 style="text-align: center"> 가입을 시작합니다! </h2> <br>
     <form action="/member/save" method="post"  name="saveForm">
         <input type="text" name="memberEmail" placeholder="이메일을 입력하세요" id="member-email" onblur="email_check()"> <br>
         <p id="email-check-result"></p>

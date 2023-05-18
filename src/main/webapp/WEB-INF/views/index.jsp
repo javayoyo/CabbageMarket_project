@@ -18,7 +18,16 @@
 
 <div id = "section">
 
-    <h2> 실시간으로 거래를 진행해보세요 ! </h2>
+   <h1 style="text-align: left;margin-left: 10px">
+배려를 추구하는 <br>
+배추마켓
+   </h1>
+
+
+
+
+
+
 </div>
 
 
