@@ -17,8 +17,8 @@
   console.log(date.getFullYear());
   const footer = document.getElementById("footer");
   footer.innerHTML = "<p>&copy; " + date.getFullYear() + "&nbsp; HRDKOREA  All rights reserved.</p>" +
-      "<br><br><a>이용약관</a><a>개인정보처리방침</a>";
-
+      "<br><br><div style='padding: 3px'><a href='./adminPages/terms'>이용약관</a><a>개인정보처리방침</a><a>위치기반서비스 이용약관</a></div>";
+// 약관 공백 띄우기 실패함 다시 확인
 
 
 

@@ -17,12 +17,6 @@
             <a href="/" style="color: #6ad959"> 🥬 배추마켓 </a>
         </li>
         <li>
-            <a href="/member/save">회원가입</a>
-        </li>
-        <li>
-            <a href="/member/login">로그인</a>
-        </li>
-        <li>
             <a href="/member/buy">거래하기</a>
         </li>
         <li>
@@ -39,7 +33,7 @@
         </li>
 
 
-        <li class="login-name" id="login-area">
+        <li class="login-name" id="login-area" style="padding: 20px">
 
         </li>
 
@@ -47,3 +41,20 @@
 
 
 </div>
+<script>
+const loginArea = document.getElementById("login-area");
+
+const loginEmail = '${sessionScope.loginEmail}';
+console.log(loginEmail.length);
+
+if(loginEmail.length != 0 ) {
+
+    loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>"+loginEmail + "님 마이페이지</a>"+
+        "<a href='/member/logout'>logout</a>";
+
+} else {
+    loginArea.innerHTML = "<a href='/member/login'>login</a>";
+}
+
+
+</script>
