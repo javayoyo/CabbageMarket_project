@@ -21,9 +21,11 @@
 
 </body>
 
+
+<%--해당 로그인 버튼 누르면 로그인 화면으로 실행안돼 확인요망--%>
 <script>
     const gogle_login = () => {
-      location.href = "/memberPages/gogleLogin";
+      location.href = "/member/gogleLogin";
     }
 </script>
 </html>
