@@ -1,31 +1,28 @@
 <%--
   Created by IntelliJ IDEA.
   User: user
-  Date: 2023-05-17
-  Time: 오후 2:13
+  Date: 2023-05-18
+  Time: 오전 8:59
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
+    <link rel="stylesheet" href="./resources/css/main.css">
+
 </head>
 <body>
-<h2>실시간으로 거래를 진행해보세요</h2>
+<%@include file="./component/nav.jsp"%>
 
-<iframe src="https://service.dongledongle.com/market" frameborder="0" width="100%" height="300"></iframe>
 
-<input type="button" value="처음으로">
-<button onclick="gogle_login()">구글로그인</button>
+<div id = "section">
 
+    <h2> 실시간으로 거래를 진행해보세요 ! </h2>
+</div>
+
+
+<%@include file="./component/footer.jsp"%>
 
 </body>
-
-
-<%--해당 로그인 버튼 누르면 로그인 화면으로 실행안돼 확인요망--%>
-<script>
-    const gogle_login = () => {
-      location.href = "/member/gogleLogin";
-    }
-</script>
 </html>
