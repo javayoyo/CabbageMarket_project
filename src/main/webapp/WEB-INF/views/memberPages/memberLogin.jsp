@@ -28,7 +28,7 @@
             <li id="GgCustomLogin">
                 <a href="javascript:void(0)">
                     <button style="background-color: #3684dc;color: white;height: 40px;width: 150px">
-                        <div style="text-align: center"><img src="/resources/img/구글로고.png" style="height: 30px;width: 30px">
+                        <div style="text-align: center"><img src="/resources/img/구글로고.png" style="height: 20px;width: 20px">
                             <span> 구글 계정 로그인 </span></div></button>
 
                 </a>

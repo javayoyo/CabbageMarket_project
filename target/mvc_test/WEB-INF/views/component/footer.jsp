@@ -9,7 +9,7 @@
 
 <style>
     a {
-        margin-right: 10px;
+        margin-right: 20px;
     }
 </style>
 
@@ -27,8 +27,6 @@
   const footer = document.getElementById("footer");
   footer.innerHTML = <p>&copy; " + date.getFullYear() + "&nbsp; HRDKOREA  All rights reserved.</p>
       ;
-// 약관 공백 띄우기 실패함 다시 확인
-
 
 
 
