@@ -17,7 +17,7 @@
             <a href="/" style="color: #6ad959"> 🥬 배추마켓 </a>
         </li>
         <li>
-            <a href="/member/buy">거래하기</a>
+            <a href="/member/trade">거래하기</a>
         </li>
         <li>
             <a href="/board/paging">거래목록</a>

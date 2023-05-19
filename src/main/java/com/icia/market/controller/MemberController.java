@@ -126,4 +126,17 @@ public class MemberController {
 
 
 
+    @GetMapping("/terms")
+    public String terms () {
+        return "adminPages/terms";
+    }
+
+    @GetMapping("/privacy")
+    public String privacy () {
+        return "adminPages/privacy";
+    }
+
+
+
+
 }

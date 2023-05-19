@@ -7,9 +7,16 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
+<style>
+    a {
+        margin-right: 10px;
+    }
+</style>
+
+
 <div id="footer">
 
-    <div style='padding: 3px'><br><br><a href="adminPages/terms">이용약관</a><a>개인정보처리방침</a><a>위치기반서비스 이용약관</a></div>
+    <div><br><br><a href="/member/terms">이용약관</a><a href="member/privacy">개인정보처리방침</a><a>위치기반서비스 이용약관</a></div>
 
 </div>
 
