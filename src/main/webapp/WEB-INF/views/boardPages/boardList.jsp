@@ -13,7 +13,7 @@
 
 <html>
 <head>
-    <title>글목록</title>
+    <title>🥬 배추마켓 : 와글와글 </title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/resources/css/main.css">

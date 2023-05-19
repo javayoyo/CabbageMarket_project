@@ -68,7 +68,7 @@ public class MemberController {
         if (loginResult) {
             session.setAttribute("loginEmail", memberDTO.getMemberEmail());
 
-            return "redirect:/board/list";
+            return "redirect:/board/paging";
         } else {
 
             return "memberPages/memberLogin";

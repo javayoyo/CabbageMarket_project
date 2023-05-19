@@ -21,11 +21,11 @@ To change this template use File | Settings | File Templates.
 
 <div id="section">
   <fieldset>
-    <legend> 위치기반서비스 이용약관 </legend>
+    <legend> 배추마켓 위치기반서비스 이용약관 </legend>
 
     <div class="page-content">
       <div class="wrapper" data-controller="components--darkmode-debugger">
-        <h1>위치기반서비스 이용약관</h1>
+        <h1> 배추마켓 위치기반서비스 이용약관</h1>
 
         <h3>제1조 (목적)</h3>
 

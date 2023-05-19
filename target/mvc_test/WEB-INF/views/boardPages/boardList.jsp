@@ -13,7 +13,7 @@
 
 <html>
 <head>
-    <title>글목록</title>
+    <title>🥬 배추마켓 : 와글와글 </title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/resources/css/main.css">
@@ -34,7 +34,7 @@
             <th>조회수</th>
         </tr>
 
-        <button onclick="trade_write()"><i class="bi bi-pencil-square"></i> 글 쓰기</button>
+        <button onclick="trade_write()" style="float: right"><i class="bi bi-pencil-square"></i> 글 쓰기</button>
         <c:forEach items="${boardList}" var="board">
             <tr>
                 <td>${board.id}</td>

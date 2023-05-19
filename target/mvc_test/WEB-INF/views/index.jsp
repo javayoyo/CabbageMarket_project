@@ -10,20 +10,20 @@
 <head>
     <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
     <link rel="stylesheet" href="./resources/css/main.css">
-<style>
-    .container {
-        overflow: hidden;
-    }
-    img {
-        display: inline-block;
-        text-align: center;
-    }
-    hi {
-        text-align: center;
-        margin-left: 20px;
-        font-size: 50px;
-    }
-</style>
+    <style>
+        .container {
+            overflow: hidden;
+        }
+        img {
+            display: inline-block;
+            text-align: center;
+        }
+        p{
+            margin-top: 100px;
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 <%@include file="./component/nav.jsp"%>
@@ -31,18 +31,11 @@
 
 <div id = "section">
 
-   <div class="container">
-
-    <h1>
-        <br>
-배려를 추구하는 <br>
-배추마켓
-        <img src="/resources/img/거래거래.jpg">
-    </h1>
-
-
-   </div>
-
+    <div class="container">
+        <img src="/resources/img/거래거래.jpg" height="300px" width="500px" align="center">
+        <p>배려를 추구하는</p>
+        <p>배추마켓</p>
+    </div>
 
 </div>
 

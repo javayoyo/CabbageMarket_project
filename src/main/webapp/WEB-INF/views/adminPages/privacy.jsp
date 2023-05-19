@@ -21,7 +21,7 @@ To change this template use File | Settings | File Templates.
 
 <div id="section">
   <fieldset>
-    <legend> 개인정보처리방침 </legend>
+    <legend> 배추마켓 개인정보처리방침 </legend>
     <div class="page-content">
       <div class="wrapper" data-controller="components--darkmode-debugger">
         <h2>배추마켓 개인정보처리방침</h2>
