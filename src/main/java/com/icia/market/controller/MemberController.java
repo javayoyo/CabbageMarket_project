@@ -119,9 +119,9 @@ public class MemberController {
         return "memberPages/gogleLogin";
     }
 
-    @GetMapping("/buy")
+    @GetMapping("/trade")
     public String buy () {
-        return "memberPages/memberbuy";
+        return "memberPages/memberTrade";
     }
 
 

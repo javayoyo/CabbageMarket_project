@@ -10,7 +10,20 @@
 <head>
     <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
     <link rel="stylesheet" href="./resources/css/main.css">
-
+<style>
+    .container {
+        overflow: hidden;
+    }
+    img {
+        display: inline-block;
+        text-align: center;
+    }
+    hi {
+        text-align: center;
+        margin-left: 20px;
+        font-size: 50px;
+    }
+</style>
 </head>
 <body>
 <%@include file="./component/nav.jsp"%>
@@ -20,16 +33,14 @@
 
    <div class="container">
 
-    <h1 style="text-align: left;margin-left: 10px">
+    <h1>
+        <br>
 배려를 추구하는 <br>
 배추마켓
-   </h1>
+        <img src="/resources/img/거래거래.jpg">
+    </h1>
 
-<%--이미지 넣기--%>
 
-       <div style="float: right"><img src="/resources/img/거래거래.jpg">
-
-       </div>
    </div>
 
 
