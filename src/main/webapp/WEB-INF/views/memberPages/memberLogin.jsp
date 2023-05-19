@@ -27,9 +27,13 @@
         <ul style="list-style-type: none">
             <li id="GgCustomLogin">
                 <a href="javascript:void(0)">
-                    <button style="background-color: #3684dc;color: white;height: 40px;width: 150px">
+                    <button style="background-color: #3684dc;color: white;height: 40px;width: 200px">
                         <div style="text-align: center"><img src="/resources/img/구글로고.png" style="height: 20px;width: 20px">
-                            <span> 구글 계정 로그인 </span></div></button>
+                            <span> 구글 계정 로그인 </span></div></button> <br>
+
+                    <button style="background-color: yellow;height: 40px;width: 200px">
+                        <div style="text-align: center"><img src="/resources/img/카카오로고.png" style="height: 20px;width: 20px">
+                            <span> 카카오 계정 로그인 </span></div></button>
 
                 </a>
             </li>
