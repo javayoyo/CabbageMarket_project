@@ -14,7 +14,11 @@
 <html>
 <head>
     <title>글목록</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/resources/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
 
 </head>
 <body>
@@ -29,6 +33,8 @@
             <th>작성시간</th>
             <th>조회수</th>
         </tr>
+
+        <button onclick="trade_write()" style="float: right"><i class="bi bi-pencil-square"></i> 글 쓰기</button>
         <c:forEach items="${boardList}" var="board">
             <tr>
                 <td>${board.id}</td>
@@ -44,8 +50,15 @@
 
 </div>
 
-
 <%@include file="../component/footer.jsp"%>
 
+
 </body>
+
+<script>
+    const trade_write = () => {
+        location.href = "/board/save";
+    }
+
+</script>
 </html>

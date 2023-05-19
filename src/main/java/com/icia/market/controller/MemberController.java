@@ -136,6 +136,11 @@ public class MemberController {
         return "adminPages/privacy";
     }
 
+    @GetMapping("/location")
+    public String location () {
+        return "adminPages/location";
+    }
+
 
 
 

@@ -9,6 +9,13 @@ To change this template use File | Settings | File Templates.
 <html>
 <head>
   <title> 🥬 배추마켓 : 개인정보처리방침 </title>
+
+  <style>
+    *{
+      padding: 20px;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -304,8 +311,7 @@ To change this template use File | Settings | File Templates.
         <p>배추마켓은 이용자들의 개인정보를 "개인정보의 수집목적 및 이용목적"에서 고지한 범위 내에서 사용하며, 이용자의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의 개인정보를 외부에 공개하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br></p>
 
         <p>(1) 이용자의 동의가 있는 경우<br>
-          - <a href="https://openapi.kr.karrotmarket.com/privacy_supply/">배추미니 개인정보 제3자 제공 현황</a><br>
-          - 배추마켓 개인정보 제3자 제공 현황<br></p>
+
 
         <table style="table-layout: fixed; width: 869px">
           <colgroup>
