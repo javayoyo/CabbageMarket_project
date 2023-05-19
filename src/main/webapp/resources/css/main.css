@@ -17,10 +17,12 @@
     background-color: #e7e1e0;
     padding: 20px;
     text-align: center;
+
 }
 #footer {
     padding: 20px;
     text-align: center;
+    background-color: #157347;
 
 }
 #nav ul {
@@ -45,12 +47,12 @@
 
 #nav ul li.login-name {
     float: right;
+    padding: 10px;
 }
 
 input {
     display: inline-block;
     padding: 10px;
     margin-bottom: 10px;
-
 }
 

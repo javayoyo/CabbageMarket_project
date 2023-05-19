@@ -18,14 +18,19 @@
 
 <div id = "section">
 
-   <h1 style="text-align: left;margin-left: 10px">
+   <div class="container">
+
+    <h1 style="text-align: left;margin-left: 10px">
 배려를 추구하는 <br>
 배추마켓
    </h1>
 
 <%--이미지 넣기--%>
 
+       <div style="float: right"><img src="/resources/img/거래거래.jpg">
 
+       </div>
+   </div>
 
 
 </div>
