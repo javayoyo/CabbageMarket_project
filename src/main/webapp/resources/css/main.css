@@ -12,6 +12,8 @@
 
 #nav {
     background-color: white;
+    position: sticky;
+    top: 0;
 }
 #section {
     background-color: #e7e1e0;
