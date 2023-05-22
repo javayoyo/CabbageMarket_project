@@ -11,19 +11,30 @@
     <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
     <link rel="stylesheet" href="./resources/css/main.css">
     <style>
-        .container {
+
+        div {
             overflow: hidden;
         }
-        img {
-            display: inline-block;
-            text-align: center;
-            margin-left: 30px;
-            height: 300px;
+
+        #img1, #img3 {
+            height: 500px;
             width: 500px;
+            float: right;
+            margin-right: 10px;
+
         }
+
+        #img2 {
+            height: 500px;
+            width: 500px;
+            float: left;
+            margin-left: 10px;
+
+        }
+
+
         h2, p{
-            text-align: left;
-            margin-left: 5px;
+
         }
     </style>
 </head>
@@ -33,28 +44,23 @@
 
 <div id = "section">
 
-    <div class="container">
-        <img src="/resources/img/거래거래.jpg">
-        <h2>배려를 추구하는 <br>
-        배추마켓</h2>
-        <p>중고 거래부터 동네 정보까지, 이웃과 함께해<br>
-        가깝고 따뜻한 배려를 추구하는 마음을 만들어요.</p>
+    <div class="container1">
+
+
+        <img src="/resources/img/거래거래.jpg" id="img1">
     </div>
 
 
-    <div class="container">
-        <img src="/resources/img/채팅화면.png">
-        <h2>우리 동네<br>
-            중고 직거래 마켓</h2>
-        <p>동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
+
+    <div class="container2">
+        <img src="/resources/img/채팅화면.png" id="img2">
+
 
     </div>
 
-    <div class="container">
-        <img src="/resources/img/채팅화면.png">
-        <h2>이웃과 함께 하는<br>
-            동네 생활</h2>
-        <p>우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
+    <div class="container3">
+        <img src="/resources/img/채팅화면.png" id="img3">
+
 
     </div>
 
