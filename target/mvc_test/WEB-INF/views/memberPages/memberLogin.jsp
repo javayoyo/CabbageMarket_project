@@ -12,22 +12,23 @@
     <link rel="stylesheet" href="/resources/css/main.css">
     <!-- content에 자신의 OAuth2.0 클라이언트ID를 넣습니다. -->
     <meta name ="google-signin-client_id" content="877385374864-uoqr55bv64a8dh5t9jo5pv8lgs75m6e7.apps.googleusercontent.com">
-</head>
-<style>
-    ul button {
-        height: 40px;
-        width: 200px;
-        margin: 0 auto;
-        text-align: center;
-        display: block;
-    }
-    input {
-        height: 40px;
-        width: 200px;
-        text-align: center;
-    }
+    <style>
+        ul button {
+            height: 40px;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+        input {
+            height: 40px;
+            width: 200px;
+            text-align: center;
+        }
 
-</style>
+    </style>
+</head>
+
 
 <body>
 <%@include file="../component/nav.jsp"%>

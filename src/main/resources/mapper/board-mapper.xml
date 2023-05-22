@@ -51,7 +51,7 @@
     </delete>
 
     <select id="paging" parameterType="java.util.HashMap" resultType="board">
-        select * from board_table order by boardHits desc ,id desc limit #{start}, #{limit}
+        select * from board_table order by boardCreatedDate desc ,id desc limit #{start}, #{limit}
 
     </select>
     <select id="count" resultType="Integer">
