@@ -12,8 +12,14 @@
 <head>
     <title>🥬 배추마켓 : 글쓰기 </title>
     <link rel="stylesheet" href="/resources/css/main.css">
-
+    <style>
+        input {
+            height: 30px;
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body>
 <%@include file="../component/nav.jsp"%>
 <div id = "section">
