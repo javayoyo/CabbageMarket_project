@@ -17,8 +17,8 @@
         }
 
         #img1,#img3 {
-            height: 700px;
-            width: 700px;
+            height: 1000px;
+            width: 1200px;
             text-align: center;
             display: block;
             margin-left: 200px;
@@ -26,8 +26,8 @@
 
         }
         #img2 {
-            height: 700px;
-            width: 700px;
+            height: 1000px;
+            width: 1200px;
             text-align: center;
             display: block;
             margin-right: 200px;
@@ -36,18 +36,18 @@
         }
 
         #section1, #section2, #section3 {
-            height: 1000px;
+            height: 1200px;
             padding: 150px;
 
         }
 
 
 
-        h2{ font-size: 40px;
+        h2{ font-size: 60px;
 
         }
 
-        p { font-size: 30px;
+        p { font-size: 50px;
 
         }
         .container1, .container2, .container3 {
@@ -80,14 +80,14 @@
 </div>
 
 
-<div id = "section2" style="background-color: #d8eeae ; ">
+<div id = "section2" style="background-color: #dfeac9 ; ">
 
     <div class="container2">
         <img src="/resources/img/채팅화면.png" id="img2">
         <div style="margin-right: 30px; float: right;" >
 
             <h2>우리 동네<br>
-                중고 직거래 마켓</h2>
+                중고 직거래 마켓</h2> <br>
             <p>동네 주민들과 가깝고 따뜻한 거래를 지금 경험해보세요.</p>
         </div>
 
