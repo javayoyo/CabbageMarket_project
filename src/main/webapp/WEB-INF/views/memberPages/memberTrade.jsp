@@ -9,23 +9,32 @@
 <html>
 <head>
   <title> 🥬 배추마켓 : 거래하기 </title>
+  <link rel="stylesheet" href="/resources/css/main.css">
+
 </head>
 <body>
-<h2 style="text-align: center;font-size: 30px">실시간으로 거래를 진행해보세요</h2>
+
+<%@include file="../component/nav.jsp"%>
+
+
+<h2 style="text-align: center;font-size: 30px"> " 실시간으로 거래를 진행해보세요 " </h2> <br>
+<p style="text-align: center;font-size: 20px"> * 대화명은 본인의 계정으로 입장하셔야 거래가 가능합니다. * </p>
 
 <iframe src="https://service.dongledongle.com/market" frameborder="0" width="100%" height="300"></iframe>
 
-<input type="button" value="처음으로">
-<button onclick="gogle_login()">구글로그인</button>
+<input type="button" onclick="index()" style="text-align: center; display: block; margin: 0 auto" value="처음으로">
 
 
+
+
+<%@include file="../component/footer.jsp"%>
 </body>
 
 
 
 <script>
-  const gogle_login = () => {
-    location.href = "/member/gogleLogin";
+  const index = () => {
+    location.href = "/";
   }
 </script>
 </html>

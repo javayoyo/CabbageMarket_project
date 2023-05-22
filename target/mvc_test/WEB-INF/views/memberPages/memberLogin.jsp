@@ -13,6 +13,21 @@
     <!-- content에 자신의 OAuth2.0 클라이언트ID를 넣습니다. -->
     <meta name ="google-signin-client_id" content="877385374864-uoqr55bv64a8dh5t9jo5pv8lgs75m6e7.apps.googleusercontent.com">
 </head>
+<style>
+    ul button {
+        height: 40px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+    input {
+        height: 40px;
+        width: 200px;
+        text-align: center;
+    }
+
+</style>
 
 <body>
 <%@include file="../component/nav.jsp"%>
@@ -21,18 +36,19 @@
     <form action="/member/login" method="post" >
         <input type="text" name="memberEmail" placeholder="이메일을 입력하세요" id="member-email"> <br>
         <input type="text" name="memberPassword" placeholder="비밀번호를 입력하세요"> <br>
+        <input type="submit" value="로그인"> <br>
 
-        <input type="submit" style="height: 40px;width: 150px" value="로그인"> <br>
 
         <ul style="list-style-type: none">
+
             <li id="GgCustomLogin">
                 <a href="javascript:void(0)">
-                    <button style="background-color: #3684dc;color: white;height: 40px;width: 200px">
-                        <div style="text-align: center"><img src="/resources/img/구글로고.png" style="height: 20px;width: 20px">
+                    <button style="background-color: #3684dc;color: white;">
+                        <div><img src="/resources/img/구글로고.png" style="height: 20px;width: 20px">
                             <span> 구글 계정 로그인 </span></div></button> <br>
 
-                    <button style="background-color: yellow;height: 40px;width: 200px">
-                        <div style="text-align: center"><img src="/resources/img/카카오로고.png" style="height: 20px;width: 20px">
+                    <button style="background-color: yellow;">
+                        <div><img src="/resources/img/카카오로고.png" style="height: 20px;width: 20px">
                             <span> 카카오 계정 로그인 </span></div></button>
 
                 </a>

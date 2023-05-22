@@ -62,7 +62,7 @@
   </table>
   <button onclick="board_list()">목록</button>
   <button onclick="board_update()">수정</button>
-  <button onclick="board_delete()">삭제</button>
+  <button onclick="board_delete()">삭제</button> <br>
 
   <div id="comment-write-area">
     <input type="text" id="comment-writer" value="${sessionScope.loginEmail}" placeholder="작성자">

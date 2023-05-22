@@ -35,7 +35,7 @@
         </form>
     </div>
 
-        <button onclick="trade_write()" style="float: right"><i class="bi bi-pencil-square"></i> 글 쓰기</button><br>
+        <button onclick="trade_write()" style="float: right; margin-bottom: 15px"><i class="bi bi-pencil-square"></i> 글 쓰기</button><br>
 
 
 
