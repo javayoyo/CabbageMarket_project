@@ -39,7 +39,9 @@
 <script>
 
   const update = () => {
-    location.href = "/member/update";
+
+      location.href = "/member/update";
+
   }
 
 

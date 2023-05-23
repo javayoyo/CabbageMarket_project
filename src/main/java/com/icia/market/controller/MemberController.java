@@ -141,6 +141,10 @@ public class MemberController {
         return "adminPages/location";
     }
 
+    @GetMapping("/admin")
+    public String admin () {
+        return "adminPages/adminMain";
+    }
 
 
 

@@ -9,7 +9,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-  <title>마이페이지</title>
+  <title> 🥬 배추마켓 : 관리자페이지 </title>
   <link rel="stylesheet" href="/resources/css/main.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
@@ -30,7 +30,9 @@
 <div id="section">
   ${sessionScope.loginEmail} 님 마이페이지입니다. <br>
 
-  <button onclick="update()">회원정보 수정</button> <br> <br>
+  <button onclick="update()">관리자 정보 수정</button> <br> <br>
+
+  <button onclick="member_list()">회원목록 조회</button>
 
 </div>
 
@@ -39,8 +41,11 @@
 <script>
 
   const update = () => {
+    location.href = "/member/update";
+  }
 
-      location.href = "/member/update";
+  const member_list = () => {
+    location.href = "/member/list";
 
   }
 

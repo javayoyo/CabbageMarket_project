@@ -62,6 +62,7 @@ console.log(loginEmail.length);
         loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
             "<a href='/member/logout'>logout</a>";
 
+
     } else {
         loginArea.innerHTML = "<a onclick='check4()'>login</a>";
     }
@@ -97,13 +98,15 @@ const check3 = () => {
 
 const check4 = () => {
     if (loginEmail.length == 0) {
-        location.href = "/member/login"
+        location.href = "/member/login";
     } else {
-
-        loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
-            "<a href='/member/logout'>logout</a>";
+        if (loginEmail == "admin") {
+            location.href = "/member/admin";
+        } else {
+            location.href = "/member/mypage";
+        }
     }
-}
+};
 
 
 
