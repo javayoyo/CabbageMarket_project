@@ -26,6 +26,8 @@
 
 <h2 style="text-align: center;font-size: 30px"> " 실시간으로 거래를 진행해보세요 " </h2>
 <p style="text-align: center;font-size: 20px"> * 대화명은 본인의 계정으로 입장하셔야 거래가 가능합니다. * </p> <br>
+  <p style="text-align: center;font-size: 20px"> * 거래하려는 해당 글 번호를 통해, 원활한 거래가 가능합니다. * </p> <br>
+
 
 <iframe src="https://service.dongledongle.com/market" frameborder="0" width="70%" height="800"></iframe> <br>
 

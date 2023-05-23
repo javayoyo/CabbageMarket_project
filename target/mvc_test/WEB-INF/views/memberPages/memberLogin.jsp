@@ -52,7 +52,7 @@
 
     <form action="/member/login" method="post" id="loginForm" >
 
-        <a href="/" style="color: #6ad959;font-size: 100px;text-decoration: none;text-align: center;margin-bottom: 10px"> 🥬 배추마켓 </a> <br>
+        <a href="/" style="color: #6ad959;font-size: 100px;text-decoration: none;text-align: center;margin-bottom: 30px"> 🥬 배추마켓 </a> <br>
 
         <input type="text" name="memberEmail" placeholder="이메일을 입력하세요" id="member-email"> <br>
         <input type="text" name="memberPassword" placeholder="비밀번호를 입력하세요"> <br>
