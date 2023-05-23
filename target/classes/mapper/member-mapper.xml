@@ -28,6 +28,13 @@
     </delete>
 
     <select id="findAll" resultType="member">
+
+
+
+
+
+
+
         select * from member_table
     </select>
 
