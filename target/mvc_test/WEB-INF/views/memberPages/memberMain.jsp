@@ -15,9 +15,11 @@
 
   <style>
     #section {
+
       justify-content: center;
       align-items: center;
       text-align: center;
+      font-size: 50px;
     }
   </style>
 
@@ -26,7 +28,7 @@
 <%@include file="../component/nav.jsp"%>
 
 <div id="section">
-  ${sessionScope.loginEmail} 님 마이페이지입니다. <br> <br>
+  ${sessionScope.loginEmail} 님 마이페이지입니다. <br>
 
   <button onclick="update()">회원정보 수정</button> <br> <br>
 

@@ -24,9 +24,10 @@
     <form action="/member/update" method="post"  name="updateForm" >
         <input type="text" name="id" value="${member.id}" readonly> <br>
         <input type="text" name="memberEmail" value="${member.memberEmail}" placeholder="이메일"> <br>
-        <input type="text" name="memberPassword" id="memberPassword" placeholder="비밀번호"> <br>
         <input type="text" name="memberName" value="${member.memberName}" placeholder="이름"> <br>
-        <input type="text" name="memberMobile"  value="${member.memberMobile}" placeholder="전화번호"> <br>
+        <input type="text" name="memberMobile"  value="${member.memberMobile}" placeholder="전화번호"> <br> <br>
+        <input type="text" name="memberPassword" id="memberPassword" placeholder="비밀번호"> <br>
+        <p> * 내용 수정 및 비밀번호 입력 후, 수정 버튼을 눌러주세요 * </p> <br>
         <input type="button" onclick="update_check()" value="수정">
     </form> <br>
 
@@ -49,9 +50,15 @@
     }
 
     const member_delete = () => {
+        const result = confirm("정말로 탈퇴하시겠습니까?");
+        if(result) {
         const id  = '${member.id}';
         location.href = "/member/delete?id=" + id;
-        alert(" 탈퇴처리 되었습니다. ")
+        alert(" 탈퇴완료! 이용해주셔서 감사합니다 :) ") }
+        else {
+            alert("탈퇴 취소! 다시 돌아와서 기뻐요 :) ")
+            location.href = "/";
+        }
 
 
     }
