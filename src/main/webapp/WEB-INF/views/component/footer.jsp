@@ -8,14 +8,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <style>
+    * {
+        font-size: 30px;
+
+    }
     a {
         margin-right: 20px;
+
     }
+
+
 </style>
 
 
 <div id="footer">
-    <div style="margin-top: 20px">
+    <div style="margin-top: 30px">
         <sapn>
     <b>대표</b>
     김배추, 이열무
@@ -34,7 +41,7 @@
     </sapn>
 
 
-    <div><br><br><a href="/member/terms">이용약관</a><a href="/member/privacy">개인정보처리방침</a><a href="/member/location">위치기반서비스 이용약관</a></div>
+    <div style="margin-bottom: 20px"><br><a href="/member/terms" style="text-decoration: none;font-size: 20px">이용약관</a><a href="/member/privacy" style="text-decoration: none;font-size: 20px">개인정보처리방침</a><a href="/member/location" style="text-decoration: none;font-size: 20px">위치기반서비스 이용약관</a></div>
 
 </div>
 

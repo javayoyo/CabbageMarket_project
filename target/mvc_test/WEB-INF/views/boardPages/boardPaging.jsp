@@ -24,7 +24,7 @@
     <%--  제목을 기준으로 검색 기능 --%>
     <div class="container" id="search-area">
         <form action="/board/paging" method="get">
-            <select name="type">
+            <select name="type" style="margin-top: 30px">
 
                 <option value="boardTitle">제목</option>
                 <option value="boardWriter">작성자</option>
@@ -36,7 +36,7 @@
         </form>
     </div>
 
-        <button onclick="trade_write()" style="float: right; margin-bottom: 15px"><i class="bi bi-pencil-square"></i> 글 쓰기</button><br>
+        <button onclick="trade_write()" style="float: right; margin-bottom: 15px;margin-right: 30%"><i class="bi bi-pencil-square"></i> 글 쓰기</button><br>
 
 
 

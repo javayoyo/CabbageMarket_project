@@ -36,8 +36,8 @@
         }
 
         #section1, #section2, #section3 {
-            height: 1200px;
-            padding: 150px;
+            height: 1500px;
+            padding: 200px;
 
         }
 
@@ -108,7 +108,7 @@
             <p>우리 동네의 다양한 이야기를 이웃과 함께 나누어요.</p>
 
         </div>
-        <img src="/resources/img/채팅화면.png" id="img3">
+        <img src="/resources/img/이웃2.png" id="img3">
     </div>
 
 

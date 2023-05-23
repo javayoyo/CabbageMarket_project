@@ -52,6 +52,8 @@
                         <div><img src="/resources/img/카카오로고.png" style="height: 20px;width: 20px">
                             <span> 카카오 계정 로그인 </span></div></button>
 
+                    <a href="/member/save"> 아직 회원이 아니신가요? </a>
+
                 </a>
             </li>
         </ul>
