@@ -8,8 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>회원정보수정</title>
+    <title> 🥬 배추마켓 : 회원정보수정</title>
     <link rel="stylesheet" href="/resources/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
 
 </head>
 <body>
@@ -26,7 +28,10 @@
         <input type="text" name="memberName" value="${member.memberName}" placeholder="이름"> <br>
         <input type="text" name="memberMobile"  value="${member.memberMobile}" placeholder="전화번호"> <br>
         <input type="button" onclick="update_check()" value="수정">
-    </form>
+    </form> <br>
+
+    <button onclick="member_delete()">회원 탈퇴</button><br>
+
 </div>
 
 
@@ -41,6 +46,14 @@
         }else {
             alert("비밀번호가 일치하지 않습니다!");
         }
+    }
+
+    const member_delete = () => {
+        const id  = '${member.id}';
+        location.href = "/member/delete?id=" + id;
+        alert(" 탈퇴처리 되었습니다. ")
+
+
     }
 
 </script>

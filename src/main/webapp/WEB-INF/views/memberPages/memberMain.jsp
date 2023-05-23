@@ -13,22 +13,24 @@
   <link rel="stylesheet" href="/resources/css/main.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
+  <style>
+    #section {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
 
 </head>
 <body>
 <%@include file="../component/nav.jsp"%>
 
 <div id="section">
-  ${sessionScope.loginEmail} 님 마이페이지 입니다 <br>
+  ${sessionScope.loginEmail} 님 마이페이지입니다. <br> <br>
 
-
-
-  <button onclick="update()">회원정보수정</button>
-  <button onclick="member_delete()">회원탈퇴</button>
+  <button onclick="update()">회원정보 수정</button> <br> <br>
 
 </div>
-
-
 
 <%@include file="../component/footer.jsp"%>
 </body>
@@ -36,12 +38,7 @@
 
   const update = () => {
     location.href = "/member/update";
-
   }
-  const member_delete = () => {
-    location.href = "/member/delete";
-  }
-
 
 
 </script>

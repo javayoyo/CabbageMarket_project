@@ -98,13 +98,13 @@ public class MemberController {
     @PostMapping("/update")
     public String update(@ModelAttribute MemberDTO memberDTO) {
         memberService.update(memberDTO);
-        return "redirect:/";
+        return "memberPages/memberMain";
     }
 
     @GetMapping("/delete")
     public String delete(@RequestParam("id") Long id) {
         memberService.delete(id);
-        return "redirect:/";
+        return "redirect:/member/logout";
     }
 
     @GetMapping("/list")

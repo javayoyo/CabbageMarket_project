@@ -12,6 +12,19 @@
     <link rel="stylesheet" href="/resources/css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
+ <style>
+
+     #section {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+     }
+
+     input {
+
+     }
+ </style>
 
 
 </head>

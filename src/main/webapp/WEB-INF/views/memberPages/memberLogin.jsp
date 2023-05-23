@@ -50,6 +50,11 @@
 
 
 
+
+
+
+
+
     <form action="/member/login" method="post" id="loginForm" >
 
         <a href="/" style="color: #6ad959;font-size: 100px;text-decoration: none;text-align: center;margin-bottom: 30px"> 🥬 배추마켓 </a> <br>
@@ -63,19 +68,23 @@
 
             <li id="GgCustomLogin">
                 <a href="javascript:void(0)">
-                    <button style="background-color: #3684dc;color: white;">
+                    <button style="background-color: #3684dc;">
                         <div><img src="/resources/img/구글로고.png" style="height: 70px;width: 70px;border-radius: 50%;">
                             <span> 구글 계정 로그인 </span></div></button> <br>
 
-                    <button style="background-color: yellow;">
-                        <div><img src="/resources/img/카카오로고.png" style="height: 70px;width: 70px;border-radius: 50%;">
-                            <span> 카카오 계정 로그인 </span></div></button> <br>
 
-                    <a href="/member/save"> 아직 회원이 아니신가요? </a>
 
                 </a>
             </li>
+
+            <button style="background-color: yellow;">
+                <div><img src="/resources/img/카카오로고.png" style="height: 70px;width: 70px;border-radius: 50%;">
+                    <span> 카카오 계정 로그인 </span></div></button> <br>
         </ul>
+
+
+
+        <a href="/member/save"> 아직 회원이 아니신가요? </a>
 
 
     </form>

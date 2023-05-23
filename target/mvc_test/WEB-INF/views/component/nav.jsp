@@ -97,7 +97,7 @@ const check4 = () => {
     if (loginEmail.length == 0) {
         location.href = "/member/login"
     } else {
-        location.href = "/member/mypage"
+
         loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
             "<a href='/member/logout'>logout</a>";
     }
