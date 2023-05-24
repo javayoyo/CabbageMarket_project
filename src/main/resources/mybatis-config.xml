@@ -8,7 +8,7 @@
 
         <typeAlias type="com.icia.market.dto.CommentDTO" alias="comment" />
         <typeAlias type="com.icia.market.dto.MemberDTO" alias="member" />
-        <typeAlias type="com.icia.market.dto.WaggleDTO" alias="waggle" />
+<!--        <typeAlias type="com.icia.market.dto.WaggleDTO" alias="waggle" />-->
 
 
     </typeAliases>

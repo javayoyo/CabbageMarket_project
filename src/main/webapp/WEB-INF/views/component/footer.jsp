@@ -44,7 +44,9 @@
             <a href="/member/privacy" style="text-decoration: none;font-size: 20px">개인정보처리방침</a>
             <a href="/member/location" style="text-decoration: none;font-size: 20px">위치기반서비스 이용약관</a>
         </div>
+
     </div>
+
 
 
 <script>

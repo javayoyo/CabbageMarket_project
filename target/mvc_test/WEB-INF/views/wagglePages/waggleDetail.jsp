@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-와글페이징
+
 </body>
 </html>
