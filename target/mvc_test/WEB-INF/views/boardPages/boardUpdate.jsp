@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>글수정</title>
+    <title>🥬 배추마켓 : 글수정</title>
     <link rel="stylesheet" href="/resources/css/main.css">
 
 </head>

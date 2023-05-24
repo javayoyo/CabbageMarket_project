@@ -9,11 +9,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-  <title>마이페이지</title>
+  <title>🥬 배추마켓 : 마이페이지</title>
   <link rel="stylesheet" href="/resources/css/main.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
   <style>
+
     #section {
 
       justify-content: center;
