@@ -40,7 +40,7 @@
         </li>
 
 
-        <li class="login-name" id="login-area" style="padding: 20px">
+        <li class="login-name" id="login-area" style="padding: 20px" onclick="check4()">
 
         </li>
 
@@ -49,23 +49,46 @@
 
 </div>
 <script>
+    // 두번 눌러야 관리자페이지 적용 > 확인요망
 const loginArea = document.getElementById("login-area");
 
 const loginEmail = '${sessionScope.loginEmail}';
 console.log(loginEmail.length);
 
+if (loginEmail.length != 0) {
+
+    loginArea.innerHTML = "<a style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
+        "<a href='/member/logout'>logout</a>";
+
+}
+
+else {
+    loginArea.innerHTML = "<a href='/member/login'>login</a>";
+}
 
 
 
-    if (loginEmail.length != 0) {
+const check4 = () => {
+if(loginEmail == 'admin') {
+
+    loginArea.innerHTML = "<a href='/member/admin' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
+        "<a href='/member/logout'>logout</a>";
+}
+
+
+     else if (loginEmail.length != 0) {
 
         loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
             "<a href='/member/logout'>logout</a>";
 
 
-    } else {
-        loginArea.innerHTML = "<a onclick='check4()'>login</a>";
     }
+
+    else {
+        loginArea.innerHTML = "<a href='/member/login'>login</a>";
+    }
+
+}
 
 
     const check1 = () => {
@@ -94,21 +117,6 @@ const check3 = () => {
         location.href = "/board/board"
     }
 }
-
-
-const check4 = () => {
-    if (loginEmail.length == 0) {
-        location.href = "/member/login";
-    } else {
-        if (loginEmail == "admin") {
-            location.href = "/member/admin";
-        } else {
-            location.href = "/member/mypage";
-        }
-    }
-};
-
-
 
 
 </script>

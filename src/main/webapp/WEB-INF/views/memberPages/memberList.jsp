@@ -12,10 +12,10 @@
 <head>
     <title>관리자회원목록</title>
     <link rel="stylesheet" href="/resources/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
 </head>
 <body>
-<%@include file="../component/header.jsp" %>
 <%@include file="../component/nav.jsp" %>
 
 <div id="section">
@@ -45,9 +45,9 @@
 </body>
 <script>
 
-    const member_delete = () => {
-
-        location.href = "/member/delete";
+    const member_delete = (id) => {
+        alert("해당 회원 강제 탈퇴 처리 하였습니다.");
+        location.href = "/member/delete?id=" + id;
     }
 </script>
 </html>

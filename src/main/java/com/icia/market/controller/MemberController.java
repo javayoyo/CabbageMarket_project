@@ -98,7 +98,8 @@ public class MemberController {
     @PostMapping("/update")
     public String update(@ModelAttribute MemberDTO memberDTO) {
         memberService.update(memberDTO);
-        return "memberPages/memberMain";
+        return "redirect:/";
+
     }
 
     @GetMapping("/delete")
