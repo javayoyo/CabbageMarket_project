@@ -11,7 +11,7 @@
 
 <html>
 <head>
-  <title>Title</title>
+  <title>🥬 배추마켓 : 거래목록 </title>
   <link rel="stylesheet" href="/resources/css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

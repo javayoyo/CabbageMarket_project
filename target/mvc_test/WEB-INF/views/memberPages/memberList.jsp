@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>관리자회원목록</title>
+    <title>🥬 배추마켓 : 관리자회원목록</title>
     <link rel="stylesheet" href="/resources/css/main.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 

@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./resources/css/main.css">
     <style>
 
+        * {
+            cursor: url("/resources/img/배추추.jpeg") 20 30, url("/resources/img/배추추.jpeg") 20 30, auto;
+        }
+
         div {
             overflow: hidden;
         }

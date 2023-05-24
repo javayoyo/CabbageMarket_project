@@ -9,6 +9,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <style>
+    * {
+        cursor: url("/resources/img/배추추.jpeg") 20 30, url("/resources/img/배추추.jpeg") 20 30, auto;
+    }
     a {
         font-size: 50px;
         cursor: pointer;
@@ -59,14 +62,10 @@ if (loginEmail.length != 0) {
 
     loginArea.innerHTML = "<a style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
         "<a href='/member/logout'>logout</a>";
-
 }
-
 else {
     loginArea.innerHTML = "<a href='/member/login'>login</a>";
 }
-
-
 
 const check4 = () => {
 if(loginEmail == 'admin') {
@@ -80,8 +79,6 @@ if(loginEmail == 'admin') {
 
         loginArea.innerHTML = "<a href='/member/mypage' style='color:black;'>" + loginEmail + "님 마이페이지</a>" +
             "<a href='/member/logout'>logout</a>";
-
-
     }
 
     else {
@@ -114,7 +111,7 @@ const check3 = () => {
         location.href= "/member/login"
     }
     else {
-        location.href = "/board/board"
+        location.href = "/waggle/paging"
     }
 }
 
