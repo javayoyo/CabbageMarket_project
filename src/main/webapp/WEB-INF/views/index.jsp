@@ -10,11 +10,10 @@
 <head>
     <title> 🥬 배려와 나눔을 추구하는 배추마켓  </title>
     <link rel="stylesheet" href="./resources/css/main.css">
-    <style>
 
-        * {
-            cursor: url("/resources/img/포인터.png") 20 30, url("/resources/img/포인터.png") 20 30, auto;
-        }
+    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+    <style>
 
         div {
             overflow: hidden;
