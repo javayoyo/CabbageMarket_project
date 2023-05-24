@@ -15,8 +15,4 @@ public class BoardFileDTO {
     private Long boardId;
 
 
-
-
-
-
 }

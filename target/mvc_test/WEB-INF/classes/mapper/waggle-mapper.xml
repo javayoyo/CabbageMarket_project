@@ -5,5 +5,16 @@
 
 <mapper namespace="Waggle">
 
+    <insert id="save" parameterType="waggle" useGeneratedKeys="true" keyProperty="id">
+        -- 아이디 값을 다시 가져오고 싶을때, use(자동생성되는값이 있는가),key(해당컬럼이름)
+        insert into waggle_table(waggleWriter, waggleTitle, waggleContents, fileAttached,memberId)
+        values (#{waggleWriter},  #{waggleTitle}, #{waggleContents}, #{fileAttached}, #{memberId})
+    </insert>
+
+    <insert id="saveFile" parameterType="waggleFile">
+        insert into waggle_file_table(originalFileName,storedFileName, waggleId)
+        values (#{originalFileName},#{storedFileName}, #{waggleId} )
+    </insert>
+
 
 </mapper>
