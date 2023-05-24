@@ -44,6 +44,7 @@
         const DBPass  = '${member.memberPassword}';
         if(inputPass == DBPass) {
             document.updateForm.submit();
+            alert("수정완료");
         }else {
             alert("비밀번호가 일치하지 않습니다!");
         }

@@ -84,6 +84,7 @@
             <th>작성자</th>
             <th>내용</th>
             <th>작성시간</th>
+
           </tr>
           <c:forEach items="${commentList}" var="comment">
             <tr>
@@ -93,6 +94,8 @@
               <td>
                 <fmt:formatDate value="${comment.commentCreatedDate}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
               </td>
+
+
             </tr>
           </c:forEach>
         </table>
@@ -132,13 +135,22 @@
           output += "<td>" + res[i].commentWriter + "</td>";
           output += "<td>" + res[i].commentContents + "</td>";
           output += "<td>" + moment(res[i].commentCreatedDate).format("YYYY-MM-DD HH:mm:ss") + "</td>";
+
           output += "</tr>";
         }
         output += "</table>";
         result.innerHTML = output;
-        document.getElementById("comment-writer").value = "";
+
+
+
+
+        document.getElementById("comment-writer").value = "${sessionScope.loginEmail}";
         document.getElementById("comment-contents").value = "";
-      },
+
+
+
+      }
+      ,
       error: function () {
         console.log("실패");
       }
