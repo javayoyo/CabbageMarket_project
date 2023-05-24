@@ -15,6 +15,16 @@
     <link rel="stylesheet" href="/resources/css/main.css">
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <style>
+        #section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /* 섹션의 전체 높이를 화면 높이로 설정 */
+        }
+    </style>
+
 </head>
 <body>
 <%@include file="../component/nav.jsp" %>
