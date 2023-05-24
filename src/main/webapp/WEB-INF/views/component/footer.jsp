@@ -10,13 +10,11 @@
 <style>
     * {
         font-size: 30px;
-
+        cursor: url("/resources/img/포인터.png") 20 30, url("/resources/img/포인터.png") 20 30, auto;
     }
     a {
         margin-right: 20px;
-
     }
-
 
 </style>
 

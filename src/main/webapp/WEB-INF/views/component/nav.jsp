@@ -10,7 +10,7 @@
 
 <style>
     * {
-        cursor: url("/resources/img/배추추.jpeg") 20 30, url("/resources/img/배추추.jpeg") 20 30, auto;
+        cursor: url("/resources/img/포인터.png") 20 30, url("/resources/img/포인터.png") 20 30, auto;
     }
     a {
         font-size: 50px;
