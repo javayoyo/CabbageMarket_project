@@ -1,9 +1,6 @@
 package com.icia.market.controller;
 
-import com.icia.market.dto.BoardDTO;
-import com.icia.market.dto.BoardFileDTO;
-import com.icia.market.dto.CommentDTO;
-import com.icia.market.dto.PageDTO;
+import com.icia.market.dto.*;
 import com.icia.market.service.BoardService;
 import com.icia.market.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -122,10 +119,28 @@ public class BoardController {
         return "redirect:/board/paging";
     }
 
-
-
-
-
+//    @GetMapping("/heart")
+//    public String detail(@RequestParam("boardId") long boardId, Model model, @RequestParam(value="page", required=false, defaultValue="1")int page, @RequestParam("memberId") long memberId) {
+//
+//        BoardDTO board = boardService.findById(boardId);
+//        model.addAttribute("board", board);
+//        model.addAttribute("page", page);
+//
+//        // 아래부터 좋아요 기능 시 추가되는 부분
+//
+//        HeartDTO heart = new HeartDTO();
+//        // 좋아요가 되있는지 찾기위해 게시글번호와 회원번호를 보냄.
+//        heart = boardService.findHeart(boardId, memberId);
+//        // 찾은 정보를 heart로 담아서 보냄
+//        model.addAttribute("heart",heart);
+//        return "boardPages/boardDetail";
+//    }
+//
+//    @PostMapping("/heart")
+//    public @ResponseBody int heart(@ModelAttribute HeartDTO heart) {
+//        int result = boardService.insertHeart(heart);
+//        return result;
+//    }
 
 
 

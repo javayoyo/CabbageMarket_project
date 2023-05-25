@@ -8,6 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
 
 <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>
 
@@ -47,6 +49,9 @@
         <li class="login-name" id="login-area" style="padding: 20px" onclick="check4()">
 
         </li>
+
+
+
 
     </ul>
 
@@ -115,6 +120,7 @@ const check3 = () => {
         location.href = "/waggle/paging"
     }
 }
+
 
 
 </script>

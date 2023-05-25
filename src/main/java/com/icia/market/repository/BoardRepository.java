@@ -64,10 +64,29 @@ public class BoardRepository {
     }
 
 
-
-
-
     public void delete(Long id) {
         sql.delete("Board.delete", id);
     }
+
+//    public HeartDTO findHeart(Map<String, Long> number) {
+//        return sql.selectOne("Board.findHeart",number);
+//    }
+//
+//    // 좋아요가 DB에 있는지 확인
+//    public HeartDTO findHeart(HeartDTO heart) {
+//        return sql.selectOne("Board.findHeart2",heart);
+//    }
+//
+//    // 좋아요 정보(heart_table에 게시글 번호, 회원 번호) 저장
+//    public int insertHeart(HeartDTO heart) {
+//        return sql.insert("Board.insertHeart", heart);
+//    }
+//
+//    // 좋아요 삭제
+//    public void deleteHeart(HeartDTO heart) {
+//        sql.delete("Board.deleteHeart",heart);
+//    }
+
+
 }
+

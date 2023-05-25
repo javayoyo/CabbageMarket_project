@@ -65,6 +65,27 @@
     <select id="search" parameterType="java.util.HashMap" resultType="board">
         select * from board_table where ${type} like concat('%', #{q}, '%') order by id desc limit #{start}, #{limit}
     </select>
+
+<!--    <select id="findHeart" parameterType="java.util.HashMap" resultType="heart">-->
+<!--        select * from heart_table where boardId=#{boardId} and memberId=#{memberId}-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    // 좋아요 확인&ndash;&gt;-->
+<!--    <select id="findHeart2" parameterType="heart" resultType="heart">-->
+<!--        select * from heart_table where boardId=#{boardId} and memberId=#{memberId}-->
+<!--    </select>-->
+
+<!--&lt;!&ndash;    // 좋아요 저장&ndash;&gt;-->
+<!--    <insert id="insertHeart" parameterType="heart">-->
+<!--        insert into heart_table(boardId, memberId, heart)-->
+<!--        values(#{boardId}, #{memberId}, 1)-->
+<!--    </insert>-->
+
+<!--&lt;!&ndash;    // 좋아요 삭제&ndash;&gt;-->
+<!--    <delete id="deleteHeart" parameterType="heart">-->
+<!--        delete from heart_table where boardId=#{boardId} and memberId=#{memberId}-->
+<!--    </delete>-->
+
 </mapper>
 
 

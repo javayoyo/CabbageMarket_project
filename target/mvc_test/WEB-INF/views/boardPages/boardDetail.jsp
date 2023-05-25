@@ -23,6 +23,7 @@
 <div id="section">
   <table>
 
+
     <tr>
       <th>id</th>
       <td>${board.id}</td>
@@ -48,6 +49,8 @@
       <th>contents</th>
       <td>${board.boardContents}</td>
     </tr>
+
+
     <c:if test="${board.fileAttached == 1}">
       <tr>
         <th>image</th>
@@ -58,11 +61,33 @@
           </c:forEach>
         </td>
       </tr>
+
+
     </c:if>
+
+
+
+
   </table>
   <button onclick="board_list()">목록</button>
   <button onclick="board_update()">수정</button>
   <button onclick="board_delete()">삭제</button> <br>
+
+
+
+<%--  // 좋아요 버튼을 생성하는 코드--%>
+<%--  // 좋아요 이미지는 부트스트랩 아이콘의 heart.svg, heart-fill.svg 저장해서 사용--%>
+<%--  // heart : 좋아요O, heart-fill : 좋아요X--%>
+<%--  // 경로는 resouces폴더의 icon폴더안에 저장--%>
+<%--  // 이미지 경로는 맥 기준이므로 윈도우사용자는 윈도우에 맞게 변경할 것--%>
+<%--  <div>--%>
+<%--    <a class="text-dark heart">--%>
+<%--      <img id="heart" height="30px" width="30px" src="/resources/img/heart.svg">--%>
+<%--      좋아요${heart.heart}--%>
+<%--    </a>--%>
+<%--  </div>--%>
+
+
 
   <div id="comment-write-area">
     <input type="text" id="comment-writer" value="${sessionScope.loginEmail}" placeholder="작성자">
@@ -186,5 +211,50 @@
     </c:if>
 
   }
+
+  <%--// 좋아요 만들기 테스트중--%>
+  <%--$(function () {--%>
+
+  <%--  // 좋아요가 있는지 확인한 값을 heartval에 저장--%>
+
+  <%--  var heartval = '${heart.heart}';--%>
+  <%--  // heartval이 1이면 좋아요가 이미 되있는것이므로 heart-fill.svg를 출력하는 코드--%>
+  <%--  if(heartval>0) {--%>
+  <%--    console.log(heartval);--%>
+  <%--    $("#heart").prop("src", "/resources/img/heart-fill.svg");--%>
+  <%--    $(".heart").prop('name',heartval)--%>
+  <%--  }--%>
+  <%--  else {--%>
+  <%--    console.log(heartval);--%>
+  <%--    $("#heart").prop("src", "/resources/img/heart.svg");--%>
+  <%--    $(".heart").prop('name',heartval)--%>
+  <%--  }--%>
+
+  <%--  // 좋아요 버튼을 클릭 시 실행되는 코드--%>
+  <%--  $(".heart").on("click", function () {--%>
+  <%--    var that = $(".heart");--%>
+  <%--    $.ajax({--%>
+  <%--      url :'/board/heart',--%>
+  <%--      type :'POST',--%>
+  <%--      data : {'boardId':${board.id}, 'memberId':${sessionScope.memberId}},--%>
+  <%--      success : function(data){--%>
+  <%--        that.prop('name',data);--%>
+  <%--        if(data==1) {--%>
+  <%--          $('#heart').prop("src","/resources/img/heart-fill.svg");--%>
+  <%--        } else {--%>
+  <%--          $('#heart').prop("src","/resources/img/heart.svg");--%>
+  <%--        }--%>
+  <%--      }--%>
+  <%--    });--%>
+  <%--  });--%>
+
+
+  <%--});--%>
+
+
+
+
+
+
 </script>
 </html>

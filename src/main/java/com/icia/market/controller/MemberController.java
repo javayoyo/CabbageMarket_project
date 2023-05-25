@@ -33,6 +33,8 @@ public class MemberController {
         if(saveResult > 0) {
             return "memberPages/memberLogin";
         }else {
+
+
             return "index";
         }
     }
