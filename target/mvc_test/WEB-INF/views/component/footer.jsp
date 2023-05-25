@@ -19,7 +19,7 @@
         margin-right: 20px;
     }
 </style>
-<div id="footer-text">
+
 <div id="footer">
 
         <span>
@@ -46,7 +46,7 @@
         </div>
 
     </div>
-</div>
+
 
 
 <script>

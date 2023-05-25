@@ -71,7 +71,7 @@
                 <img width="487px" height="78px" src="/resources/img/kakao_login_medium_narrow.png"></a>
 
             <%--            <button style="background-color: yellow;">--%>
-<%--                <div><img src="/resources/img/카카오로고.png" style="height: 70px;width: 70px;border-radius: 50%;">--%>
+<%--                <div><img src="/카카오이미지" style="height: 70px;width: 70px;border-radius: 50%;">--%>
 <%--                    <span> 카카오 계정 로그인 </span></div></button> <br>--%>
         </ul>
 
