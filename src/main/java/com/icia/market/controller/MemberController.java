@@ -147,6 +147,19 @@ public class MemberController {
         return "adminPages/adminMain";
     }
 
+    @GetMapping("/kakao")
+    public String kakao() {
+        StringBuffer loginUrl = new StringBuffer();
+        loginUrl.append("https://kauth.kakao.com/oauth/authorize?client_id=");
+        loginUrl.append("e0beb4c0b8c6930acc727bf0482cc361");
+        loginUrl.append("&redirect_uri=");
+        loginUrl.append("http://localhost:9098");
+        loginUrl.append("/board/paging");
+        loginUrl.append("&response_type=code");
+
+        return "redirect:" + loginUrl.toString();
+    }
+
 
 
 }
