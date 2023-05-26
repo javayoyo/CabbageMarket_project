@@ -64,7 +64,7 @@
                 <tr>
                     <td>${board.id}</td>
                     <td>
-                        <a href="/board?id=${board.id}&page=${paging.page}&q=${q}&type=${type}">${board.boardTitle}</a>
+                        <a href="/waggle?id=${board.id}&page=${paging.page}&q=${q}&type=${type}">${board.boardTitle}</a>
                     </td>
                     <td>${board.boardWriter}</td>
                     <td>
@@ -87,7 +87,7 @@
                 <%-- 1페이지가 아닌 경우에는 [이전]을 클릭하면 현재 페이지보다 1 작은 페이지 요청 --%>
                 <c:otherwise>
                     <li class="page-item">
-                        <a class="page-link" href="/board/paging?page=${paging.page-1}&q=${q}&type=${type}">[이전]</a>
+                        <a class="page-link" href="/waggle/paging?page=${paging.page-1}&q=${q}&type=${type}">[이전]</a>
                     </li>
                 </c:otherwise>
             </c:choose>
@@ -125,6 +125,7 @@
                 </c:otherwise>
             </c:choose>
         </ul>
+
     </div>
 </div>
 <%@include file="../component/footer.jsp" %>
