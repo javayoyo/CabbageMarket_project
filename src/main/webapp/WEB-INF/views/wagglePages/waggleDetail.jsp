@@ -26,37 +26,37 @@
 
         <tr>
             <th>id</th>
-            <td>${board.id}</td>
+            <td>${waggle.id}</td>
         <tr>
             <th>writer</th>
-            <td>${board.boardWriter}</td>
+            <td>${waggle.boardWriter}</td>
         </tr>
         <tr>
             <th>date</th>
             <td>
-                <fmt:formatDate value="${board.boardCreatedDate}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
+                <fmt:formatDate value="${waggle.boardCreatedDate}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
             </td>
         </tr>
         <tr>
             <th>hits</th>
-            <td>${board.boardHits}</td>
+            <td>${waggle.boardHits}</td>
         </tr>
         <tr>
             <th>title</th>
-            <td>${board.boardTitle}</td>
+            <td>${waggle.boardTitle}</td>
         </tr>
         <tr>
             <th>contents</th>
-            <td>${board.boardContents}</td>
+            <td>${waggle.boardContents}</td>
         </tr>
 
 
-        <c:if test="${board.fileAttached == 1}">
+        <c:if test="${waggle.fileAttached == 1}">
             <tr>
                 <th>image</th>
                 <td>
                     <c:forEach items="${boardFileList}" var="boardFile">
-                        <img src="${pageContext.request.contextPath}/upload/${boardFile.storedFileName}"
+                        <img src="${pageContext.request.contextPath}/upload/${waggleFile.storedFileName}"
                              alt="" width="100" height="100">
                     </c:forEach>
                 </td>
@@ -123,7 +123,7 @@
     const comment_write = () => {
         const commentWriter = document.getElementById("comment-writer").value;
         const commentContents = document.getElementById("comment-contents").value;
-        const boardId = '${board.id}';
+        const boardId = '${waggle.id}';
         const result = document.getElementById("comment-list");
         $.ajax({
             type: "post",
@@ -183,8 +183,8 @@
 
     // 본인이 아니면 수정, 삭제 버튼 기능 비활성화로 클릭해도 미실행(수정,삭제확인완)
     const board_update = () => {
-        <c:if test="${board.boardWriter == sessionScope.loginEmail}">
-        const id = '${board.id}';
+        <c:if test="${waggle.boardWriter == sessionScope.loginEmail}">
+        const id = '${waggle.id}';
         location.href = "/waggle/update?id=" + id;
 
         </c:if>
@@ -192,8 +192,8 @@
     }
 
     const board_delete = () => {
-        <c:if test="${board.boardWriter == sessionScope.loginEmail or sessionScope.loginEmail == 'admin'}">
-        const id = '${board.id}';
+        <c:if test="${waggle.boardWriter == sessionScope.loginEmail or sessionScope.loginEmail == 'admin'}">
+        const id = '${waggle.id}';
         location.href = "/waggle/delete?id=" + id;
 
         </c:if>

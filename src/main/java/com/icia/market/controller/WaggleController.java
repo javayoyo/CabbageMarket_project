@@ -33,9 +33,7 @@ public class WaggleController {
         System.out.println("waggleDTO = " + waggleDTO);
         waggleService.save(waggleDTO);
         return "redirect:/waggle/paging";
-
     }
-
 
     @GetMapping("/list")
     public String findAll(Model model) {
@@ -80,6 +78,7 @@ public class WaggleController {
         model.addAttribute("board", waggleDTO);
         model.addAttribute("page",page);
         model.addAttribute("q",q);
+
         model.addAttribute("type",type);
 
 

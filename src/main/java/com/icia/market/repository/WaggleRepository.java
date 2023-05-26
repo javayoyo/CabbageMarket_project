@@ -38,8 +38,8 @@ public class WaggleRepository {
         sql.update("Waggle.update", boardDTO);
     }
 
-    public void saveFile(WaggleFileDTO boardFileDTO) {
-        sql.insert("Waggle.saveFile", boardFileDTO);
+    public void saveFile(WaggleFileDTO waggleFileDTO) {
+        sql.insert("Waggle.saveFile", waggleFileDTO);
     }
 
     public List<WaggleFileDTO> findFile(Long boardId) {
