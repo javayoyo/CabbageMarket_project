@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>
+<%--<style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>--%>
 
 <style>
     * {
@@ -20,7 +20,7 @@
     }
 </style>
 
-<div id="footer">
+<div id="footer" style="padding-top: 20px">
 
         <span>
             <b>대표</b>
