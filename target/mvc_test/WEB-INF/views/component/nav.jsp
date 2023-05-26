@@ -43,13 +43,14 @@
 
         <li class="admin-name" id="admin-area">
 
-        </li>
+
+
+<%--            <button onclick="dark_mode()">다크모드</button>--%>
 
 
         <li class="login-name" id="login-area" style="padding: 20px" onclick="check4()">
 
         </li>
-
 
 
 
@@ -121,6 +122,13 @@ const check3 = () => {
     }
 }
 
-
+    //     const dark_mode = () => {
+    //
+    //     const section = window.top.document.getElementById("section");
+    //
+    //     section.style.color = "white";
+    //     section.style.background = "black";
+    //
+    // }
 
 </script>

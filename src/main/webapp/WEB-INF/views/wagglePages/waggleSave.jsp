@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>🥬 배추마켓 : 와글와글 글쓰기 </title>
+    <title>🥬 배추마켓 : 글쓰기 </title>
     <link rel="stylesheet" href="/resources/css/main.css">
     <style>
         input {
@@ -24,11 +24,11 @@
 <%@include file="../component/nav.jsp"%>
 <div id = "section">
     <form action="/waggle/save" method="post" name="saveForm" enctype="multipart/form-data">
-        <input type="text" name="waggleTitle" placeholder="제목을 입력하세요"> <br>
-        <input type="text" name="waggleWriter" value="${sessionScope.loginEmail}" placeholder="작성자를 입력하세요" readonly> <br>
+        <input type="text" name="boardTitle" placeholder="제목을 입력하세요"> <br>
+        <input type="text" name="boardWriter" value="${sessionScope.loginEmail}" placeholder="작성자를 입력하세요" readonly> <br>
 
-        <textarea name="waggleContents" cols="30" rows="10" placeholder="게시글 작성 양식&#13;&#10;ex) 서울 배추동) 배추 팔아요 ~ "></textarea> <br>
-        <input type="file" name="waggleFile" multiple> <br>
+        <textarea name="boardContents" cols="30" rows="10" placeholder="게시글 작성 양식&#13;&#10;ex) 서울 배추동) 배추 팔아요 ~ "></textarea> <br>
+        <input type="file" name="boardFile" multiple> <br>
         <input type="submit" value="작성">
     </form>
 

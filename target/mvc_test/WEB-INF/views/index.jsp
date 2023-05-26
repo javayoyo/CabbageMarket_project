@@ -13,7 +13,7 @@
 
 
 
-    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>
+<%--    <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat976.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat976.gif), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/12/15/corgi-tail-wagging.html" target="_blank" title="Corgi Tail Wagging"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Corgi Tail Wagging" style="position:absolute; top: 0px; right: 0px;" /></a>--%>
 
     <style>
 
@@ -46,8 +46,6 @@
 
         }
 
-
-
         h2{ font-size: 60px;
 
         }
@@ -60,15 +58,22 @@
             justify-content: center;
         }
 
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+
 
     </style>
 </head>
 <body>
 <%@include file="./component/nav.jsp"%>
 
-<div id="section">
-    <a onclick="dark_mode()">다크모드</a>
+<button onclick="dark_mode()">다크모드</button>
+
+
 <div id = "section1" style="background-color: #efeadd; ">
+
 
     <div class="container1">
 
@@ -85,7 +90,6 @@
 
 </div>
 
-
 <div id = "section2" style="background-color: #dfeac9 ; ">
 
     <div class="container2">
@@ -98,10 +102,7 @@
         </div>
 
     </div>
-
-
 </div>
-
 
 
 <div id = "section3" style="background-color: #e7e8e5 ;">
@@ -120,8 +121,6 @@
 
 </div>
 
-</div>
-
 
 <%@include file="./component/footer.jsp"%>
 
@@ -129,17 +128,21 @@
 
 <script>
     const dark_mode = () => {
-        const section = document.getElementById("section");
+
         const section1 = document.getElementById("section1");
         const section2= document.getElementById("section2");
+        const section3= document.getElementById("section3");
 
-        section.style.color = "white";
-        section.style.background = "black";
+
         section1.style.color = "white";
         section1.style.background = "black";
         section2.style.color = "white";
         section2.style.background = "black";
+        section3.style.color = "white";
+        section3.style.background = "black";
 
     }
 </script>
+
+
 </html>

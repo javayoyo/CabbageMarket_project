@@ -5,16 +5,67 @@
 
 <mapper namespace="Waggle">
 
-<!--    <insert id="save" parameterType="waggle" useGeneratedKeys="true" keyProperty="id">-->
-<!--        &#45;&#45; 아이디 값을 다시 가져오고 싶을때, use(자동생성되는값이 있는가),key(해당컬럼이름)-->
-<!--        insert into waggle_table(waggleWriter, waggleTitle, waggleContents, fileAttached,memberId)-->
-<!--        values (#{waggleWriter},  #{waggleTitle}, #{waggleContents}, #{fileAttached}, #{memberId})-->
-<!--    </insert>-->
 
-<!--    <insert id="saveFile" parameterType="waggleFile">-->
-<!--        insert into waggle_file_table(originalFileName,storedFileName, waggleId)-->
-<!--        values (#{originalFileName},#{storedFileName}, #{waggleId} )-->
-<!--    </insert>-->
 
+
+    <insert id="save" parameterType="waggle" useGeneratedKeys="true" keyProperty="id">
+        -- 아이디 값을 다시 가져오고 싶을때, use(자동생성되는값이 있는가),key(해당컬럼이름)
+        insert into waggle_table(boardWriter, boardTitle, boardContents, fileAttached,memberId)
+        values (#{boardWriter},  #{boardTitle}, #{boardContents}, #{fileAttached}, #{memberId})
+    </insert>
+
+    <insert id="saveFile" parameterType="boardFile">
+        insert into waggle_file_table(originalFileName,storedFileName, boardId)
+        values (#{originalFileName},#{storedFileName}, #{boardId} )
+    </insert>
+
+
+    <select id="findAll" resultType="waggle">
+        select *from waggle_table order by boardHits desc
+    </select>
+
+
+    <update id="updateHits" parameterType="Long">
+        update waggle_table
+        set boardHits=boardHits + 1
+        where id = #{id}
+    </update>
+
+    <select id="findById" parameterType="Long" resultType="waggle">
+        select *
+        from waggle_table
+        where id = #{id}
+    </select>
+
+    <update id="update" parameterType="waggle">
+        update waggle_table
+        set boardTitle=#{boardTitle},
+            boardContents=#{boardContents}
+        where id = #{id}
+    </update>
+
+    <select id="findFile" parameterType="Long" resultType="boardFile">
+        select * from waggle_file_table where boardId = #{boardId}
+    </select>
+
+    <delete id="delete" parameterType="Long">
+        delete from waggle_table where id = #{id}
+    </delete>
+
+    <select id="paging" parameterType="java.util.HashMap" resultType="waggle">
+        select * from waggle_table order by boardCreatedDate desc ,id desc limit #{start}, #{limit}
+
+    </select>
+    <select id="count" resultType="Integer">
+        select count(id) from waggle_table
+    </select>
+
+    <select id="searchCount" parameterType="java.util.HashMap" resultType="Integer">
+        select count(id) from waggle_table where ${type} like concat('%', #{q}, '%')
+    </select>
+
+    <select id="search" parameterType="java.util.HashMap" resultType="waggle">
+        select * from waggle_table where ${type} like concat('%', #{q}, '%') order by id desc limit #{start}, #{limit}
+    </select>
 
 </mapper>
