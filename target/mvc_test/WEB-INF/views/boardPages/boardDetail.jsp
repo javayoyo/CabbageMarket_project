@@ -119,6 +119,9 @@
               <td>
                 <fmt:formatDate value="${comment.commentCreatedDate}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
               </td>
+              <td>
+                <button onclick="delete_comment(${comment.id})">댓글 삭제</button>
+              </td>
 
 
             </tr>
@@ -147,12 +150,14 @@
       },
       success: function (res) {
         console.log(res);
+        updateCommentList(res);
         let output = "<table>";
         output += "<tr>";
         output += "<th>id</th>";
         output += "<th>작성자</th>";
         output += "<th>내용</th>";
         output += "<th>작성시간</th>";
+
         output += "</tr>";
         for(let i in res) {
           output += "<tr>";
@@ -167,11 +172,8 @@
         result.innerHTML = output;
 
 
-
-
         document.getElementById("comment-writer").value = "${sessionScope.loginEmail}";
         document.getElementById("comment-contents").value = "";
-
 
 
       }
@@ -187,7 +189,6 @@
     const q = '${q}';
     const page = '${page}';
     location.href = "/board/paging?page=" + page + "&type=" +
-
 
 
             type +  "&q=" + q;
@@ -251,6 +252,49 @@
 
   <%--});--%>
 
+  const delete_comment = (commentId) => {
+    $.ajax({
+      type: "POST",
+      url: "/comment/delete",
+      data: {
+        "commentId": commentId
+      },
+      success: function (res) {
+
+
+
+
+        console.log(res);
+        // 댓글 삭제 후 업데이트된 댓글 목록을 가져와서 화면에 출력
+        updateCommentList(res);
+      },
+      error: function () {
+        console.log("댓글 삭제 실패");
+      }
+    });
+  }
+
+  const updateCommentList = (comments) => {
+    const result = document.getElementById("comment-list");
+    let output = "<table>";
+    output += "<tr>";
+    output += "<th>id</th>";
+    output += "<th>작성자</th>";
+    output += "<th>내용</th>";
+    output += "<th>작성시간</th>";
+    output += "</tr>";
+    for (let i in comments) {
+      output += "<tr>";
+      output += "<td>" + comments[i].id + "</td>";
+      output += "<td>" + comments[i].commentWriter + "</td>";
+      output += "<td>" + comments[i].commentContents + "</td>";
+      output += "<td>" + moment(comments[i].commentCreatedDate).format("YYYY-MM-DD HH:mm:ss") + "</td>";
+      output += "<td><button onclick='delete_comment(" + comments[i].id + ")'>댓글 삭제</button></td>";
+      output += "</tr>";
+    }
+    output += "</table>";
+    result.innerHTML = output;
+  }
 
 
 

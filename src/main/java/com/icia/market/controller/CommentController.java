@@ -25,6 +25,11 @@ public class CommentController {
         List<CommentDTO> commentDTOList = commentService.findAll(commentDTO.getBoardId());
         return new ResponseEntity<>(commentDTOList, HttpStatus.OK);
     }
+
+
+
+
+
 }
 
 
