@@ -186,6 +186,9 @@ drop table if exists waggle_file_table;
 
 ---
 ---
+* 거래-와글 댓글 연동> 분리 개선 필요
+* api DB 저장 구현
+---
 추후 구현을 해본다면 ?
 
 게시글 숨김>게시글 숨김
