@@ -184,3 +184,20 @@ create table waggle_file_table(
 drop table if exists waggle_file_table;
 
 
+---
+---
+추후 구현을 해본다면 ?
+
+게시글 숨김>게시글 숨김
+
+게시글 찜하기>게시글 좋아요 
+
+다국어 제공>새창으로 다국어 버전
+
+온도 레벨업 기능>온도 올리기
+
+지역별 페이징처리>지역별로 검색용이
+
+거래하기 좋은 날씨>날씨 확인 api 관련
+
+
