@@ -66,14 +66,15 @@
     </c:if>
 
 
-
   </table>
+
+<a onclick="changeImg()">찜하기<img src="/resources/img/heart.svg" id="dislike" height="30px" width="30px"></a>
   <button onclick="board_list()">목록</button>
   <button onclick="board_update()">수정</button>
   <button onclick="board_delete()">삭제</button> <br>
 
 
-  <div id="comment-write-area">
+  <div id="comment-write-area" style="margin-top: 10px">
     <input type="text" id="comment-writer" value="${sessionScope.loginEmail}" placeholder="작성자">
     <input type="text" id="comment-contents" placeholder="댓글 내용">
     <button onclick="comment_write()">댓글작성</button>
@@ -84,7 +85,6 @@
         <h2>작성된 댓글이 없습니다.</h2>
       </c:when>
       <c:otherwise>
-
 
         <table>
 
@@ -108,9 +108,6 @@
               <td>
                 <button onclick="comment_delete('${comment.id}')">댓글삭제</button>
               </td>
-
-
-
 
 
             </tr>
@@ -209,6 +206,13 @@
     const q = '${q}';
     const type = '${type}';
     location.href = "/comment/comment_delete?id=" + id + "&page=" + page + "&q="+ q +"&type="+type+"&boardId="+boardId;
+  }
+
+  const changeImg = () => {
+    const img = document.getElementById("dislike");
+    console.log(img);
+    console.log(img.src);
+    img.src = "/resources/img/heart-fill.svg";
   }
 
 
