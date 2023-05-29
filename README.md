@@ -3,7 +3,7 @@
 ## 🕶️ <개발 기간>
 + 2023.05.15 ~ 2023.05.26
 ---
-## :book: <기획 의도>
+## 📖 <기획 의도>
 + 게시판 프로젝트를 활용 및 적용하여 "당근 마켓" 참고하여 코딩 및 프로젝트 구체화
 ---
 ## ✨ <벤치마킹>
@@ -52,3 +52,135 @@
   ㄴ 동글채팅 을 활용하여 채팅 기능
 
 ---
+---
+```java
+-- 20230515 배추마켓 cabbageMarket_project
+
+-- create user cabbageMarket_project@localhost identified by '1234';
+
+-- create database db_cabbageMarket;
+
+-- grant all privileges on db_cabbageMarket.* to cabbageMarket_project@localhost;
+
+-- 관리자 계정 admin / a1111
+```
+
+select * from member_table;
+
+select * from board_table;
+
+select * from member_profile_table;
+
+select * from board_file_table;
+
+select * from comment_table;
+
+select * from waggle_table;
+
+select * from waggle_file_table;
+
+```java
+create table member_table(
+                             id bigint auto_increment primary key,
+                             memberEmail varchar(50) unique not null,
+                             memberPassword varchar(50) not null,
+                             memberName varchar(10) not null,
+                             memberMobile varchar (20) not null,
+                             memberProfile int default 0
+
+);
+```
+
+drop table if exists member_table;
+
+
+```java
+create table member_profile_table(
+                                     id bigint auto_increment primary key,
+                                     originalFileName varchar(100) not null,
+                                     storedFileName varchar(100) not null,
+                                     memberId bigint,
+                                     constraint fk_member_profile foreign key (memberId) references member_table(id)
+
+
+);
+```
+drop table if exists member_profile_table;
+
+```java
+create table board_table(
+                            id bigint auto_increment primary key,
+                            boardTitle varchar(30) not null,
+                            boardWriter varchar(30) not null,
+                            boardContents varchar(500) not null,
+                            boardHits int default 0,
+                            boardCreatedDate datetime default now(),
+                            fileAttached int default 0,
+                            memberId bigint,
+                            constraint fk_board foreign key (memberId) references member_table(id) on delete cascade
+
+);
+```
+drop table if exists board_table;
+
+
+
+```java
+create table board_file_table(
+
+                                 id bigint auto_increment primary key,
+                                 originalFileName varchar(100) not null,
+                                 storedFileName varchar(100) not null,
+                                 boardId bigint,
+                                 constraint fk_board_file foreign key (boardId) references board_table(id) on delete cascade
+);
+```
+drop table if exists board_file_table;
+
+```java
+-- 참조 필요 시, 해당 fk_인덱스 대해 중복 불가, 구별 필요
+create table comment_table(
+                              id bigint auto_increment primary key,
+                              memberId bigint,
+                              commentWriter varchar(20) not null,
+                              commentContents varchar(100) not null,
+                              commentCreatedDate datetime default now(),
+                              boardId bigint,
+                              constraint fk_comment1 foreign key (memberId) references member_table(id) on delete cascade,
+                              constraint fk_comment2 foreign key (boardId) references board_table(id) on delete cascade
+
+
+);
+```
+drop table if exists comment_table;
+
+```java
+-- 와글의 경우
+create table waggle_table(
+                             id bigint auto_increment primary key,
+                             boardTitle varchar(30) not null,
+                             boardWriter varchar(30) not null,
+                             boardContents varchar(500) not null,
+                             boardHits int default 0,
+                             boardCreatedDate datetime default now(),
+                             fileAttached int default 0,
+                             memberId bigint,
+                             constraint fk_waggle foreign key (memberId) references member_table(id) on delete cascade
+
+);
+```
+
+drop table if exists waggle_table;
+```java
+create table waggle_file_table(
+
+                                  id bigint auto_increment primary key,
+                                  originalFileName varchar(100) not null,
+                                  storedFileName varchar(100) not null,
+                                  boardId bigint,
+                                  constraint fk_waggle_file foreign key (boardId) references board_table(id) on delete cascade
+);
+```
+drop table if exists waggle_file_table;
+
+
